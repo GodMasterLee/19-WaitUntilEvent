@@ -2,9 +2,10 @@
 This module demonstrates lets you practice INPUT from the CONSOLE.
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Bowen Li.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
+import math
 
 def main():
     """ TESTs the functions in this module (by calling them). """
@@ -30,10 +31,13 @@ def double_a_float():
          -6.28
     """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # Done: 2. Implement and test this function.
     #   The testing code is already written for you (above).
     # ------------------------------------------------------------------
-
+    print('Double_a_float')
+    number = float(input('Enter your number bro:'))
+    print(number*2)
+    print('_____Finished_____')
 
 def print_an_integer_many_times():
     """
@@ -61,10 +65,13 @@ def print_an_integer_many_times():
          10
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # Done: 3. Implement and test this function.
     #   The testing code is already written for you (above).
     # ------------------------------------------------------------------
-
+    number=int(input('Enter your number dude:'))
+    for k in range(number):
+        print(number*2)
+    print('_____Finished_____')
 
 def print_an_integer_many_times_on_one_row():
     """
@@ -72,7 +79,7 @@ def print_an_integer_many_times_on_one_row():
     on a single line with no spaces in between them.
 
     Here are two sample runs, where the user input is to the right
-    of the colon:
+    of the colon:2
          Enter an integer: 3
          666
 
@@ -86,6 +93,11 @@ def print_an_integer_many_times_on_one_row():
     # HINT: One way to print on a SINGLE line is to build up a string
     #       and then print that (single) string.
     # ------------------------------------------------------------------
+    number = int(input('Enter your number kid:'))
+    for k in range(number):
+        print(number * 2,end='')
+    print()
+    print('_____Finished_____')
 
 
 def input_it_all():
@@ -123,7 +135,15 @@ def input_it_all():
     # TODO: 5. Implement and test this function.
     #   The testing code is already written for you (above).
     # ------------------------------------------------------------------
-
+    floatNumber = float(input('Enter your float child:'))
+    times = int(input('Enter your times kiddo:'))
+    string = input('Enter something you want to say here:')
+    for k in range(times):
+        print(math.sqrt(floatNumber))
+    for k in range(times):
+        print(string)
+    print('_____Finished_____')
+    
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
