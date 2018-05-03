@@ -143,7 +143,7 @@ def input_it_all():
     for k in range(times):
         print(string)
     print('_____Finished_____')
-    
+
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
